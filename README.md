@@ -108,7 +108,8 @@ Statistics-Calculator/
 
 ⚙️ How to Run Locally
 
-git clone https://github.com/your-username/statistics-calculator.git
+git clone https://github.com/mayank-gupta-develop/Statistics-Calculator.git
+
 cd statistics-calculator
 open index.html
 
