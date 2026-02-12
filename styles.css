@@ -1,0 +1,142 @@
+:root {
+  --bg-dark: #0a0a23;
+  --card-bg: #1b1b32;
+  --accent: #f1be32;
+  --text-light: #f5f6f7;
+  --text-muted: #d0d0d5;
+  --success: #4caf50;
+  --border: #2d2d44;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0a0a23, #14143a);
+  color: var(--text-light);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 15px;
+}
+
+/* Title */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: var(--accent);
+}
+
+p {
+  margin-bottom: 10px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+/* Form Card */
+form {
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: 600;
+  text-align: left;
+}
+
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 8px rgba(241, 190, 50, 0.4);
+}
+
+/* Button */
+button {
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: linear-gradient(#fecc4c, #ffac33);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Results Card */
+.results {
+  background: var(--card-bg);
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Definition styling */
+dfn {
+  color: var(--accent);
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Bold result labels */
+.bold {
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 8px 12px;
+  background-color: #111132;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Result values */
+span {
+  color: var(--success);
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  form,
+  .results {
+    padding: 18px;
+  }
+}
